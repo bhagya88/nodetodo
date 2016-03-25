@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 });
 
 
-
+// get a user data
 app.get('/:user', function (req, res) {
 	user.findOne({
 		username: req.params.user
@@ -48,7 +48,8 @@ app.get('/:user', function (req, res) {
 
 	});
 });
-	
+
+//add new user	
 
 app.post('/user', function (req, res) {
 
